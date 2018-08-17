@@ -1,18 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fyE-Sh-6z7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GVY-32-e6T">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Amatic-Bold.ttf">
+            <string>Amatic-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="YmV-GY-7O0">
+            <objects>
+                <viewController id="GVY-32-e6T" customClass="ViewController" customModule="SpiroAppNew" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qZK-SO-kw3"/>
+                        <viewControllerLayoutGuide type="bottom" id="VvY-93-ku4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9sb-fL-8SA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_Spiro" translatesAutoresizingMaskIntoConstraints="NO" id="G1q-Ii-PGP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPIRO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6A-8d-X7Y">
+                                <rect key="frame" x="127.5" y="40" width="120" height="102.5"/>
+                                <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="95"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.64313725489999995" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find allergivenlige restauranter i din by!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bb0-xA-IfB">
+                                <rect key="frame" x="39" y="149.5" width="297" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.64313725489999995" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Søg på postnummer eller by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPl-pg-2oo">
+                                <rect key="frame" x="73" y="279.5" width="229" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.64313725489999995" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fd8-S3-1p6" customClass="RoundedButton" customModule="SpiroAppNew" customModuleProvider="target">
+                                <rect key="frame" x="63" y="356.5" width="249" height="44"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.64313725489999995" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Find restaurenter!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="fx &quot;2100&quot; eller København Ø" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AS7-Qz-mPP">
+                                <rect key="frame" x="62" y="308" width="250" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="txtPostnummerLength:" destination="GVY-32-e6T" eventType="editingChanged" id="68O-4L-asQ"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZQ-oU-Jhd" customClass="RoundedButton" customModule="SpiroAppNew" customModuleProvider="target">
+                                <rect key="frame" x="128.5" y="631" width="118" height="36"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.64313725489999995" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Vælg allergier">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fyE-Sh-6z7" kind="show" id="WC3-hW-faN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fd8-S3-1p6" secondAttribute="trailing" constant="47" id="1BR-uo-w68"/>
+                            <constraint firstItem="F6A-8d-X7Y" firstAttribute="centerX" secondItem="9sb-fL-8SA" secondAttribute="centerX" id="76p-XG-a0S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AS7-Qz-mPP" secondAttribute="trailing" constant="47" id="7Je-j7-weq"/>
+                            <constraint firstItem="9ZQ-oU-Jhd" firstAttribute="centerX" secondItem="9sb-fL-8SA" secondAttribute="centerX" id="Blf-Dg-aFA"/>
+                            <constraint firstAttribute="trailing" secondItem="G1q-Ii-PGP" secondAttribute="trailing" id="BxS-B8-iiG"/>
+                            <constraint firstItem="AS7-Qz-mPP" firstAttribute="leading" secondItem="9sb-fL-8SA" secondAttribute="leadingMargin" constant="46" id="Lel-Tt-Wpv"/>
+                            <constraint firstItem="Fd8-S3-1p6" firstAttribute="top" secondItem="AS7-Qz-mPP" secondAttribute="bottom" constant="18" id="NAb-CC-zMl"/>
+                            <constraint firstItem="VvY-93-ku4" firstAttribute="top" secondItem="G1q-Ii-PGP" secondAttribute="bottom" id="QQa-Kk-t1E"/>
+                            <constraint firstItem="Fd8-S3-1p6" firstAttribute="leading" secondItem="9sb-fL-8SA" secondAttribute="leadingMargin" constant="47" id="Rkh-89-th9"/>
+                            <constraint firstItem="gPl-pg-2oo" firstAttribute="top" secondItem="Bb0-xA-IfB" secondAttribute="bottom" constant="110" id="Ud6-IM-06b"/>
+                            <constraint firstItem="F6A-8d-X7Y" firstAttribute="top" secondItem="qZK-SO-kw3" secondAttribute="bottom" constant="20" id="bPO-JE-FIT"/>
+                            <constraint firstItem="Bb0-xA-IfB" firstAttribute="top" secondItem="F6A-8d-X7Y" secondAttribute="bottom" constant="7.5" id="dcv-1Q-KE6"/>
+                            <constraint firstItem="G1q-Ii-PGP" firstAttribute="top" secondItem="9sb-fL-8SA" secondAttribute="top" id="fIo-5C-Nhw"/>
+                            <constraint firstItem="G1q-Ii-PGP" firstAttribute="leading" secondItem="9sb-fL-8SA" secondAttribute="leading" id="gmk-zQ-6zx"/>
+                            <constraint firstItem="AS7-Qz-mPP" firstAttribute="top" secondItem="gPl-pg-2oo" secondAttribute="bottom" constant="8" id="jeZ-jB-srg"/>
+                            <constraint firstItem="Bb0-xA-IfB" firstAttribute="centerX" secondItem="9sb-fL-8SA" secondAttribute="centerX" id="kVr-Sp-A1g"/>
+                            <constraint firstItem="gPl-pg-2oo" firstAttribute="centerX" secondItem="9sb-fL-8SA" secondAttribute="centerX" id="pKH-yG-BiX"/>
+                            <constraint firstItem="AS7-Qz-mPP" firstAttribute="centerX" secondItem="9sb-fL-8SA" secondAttribute="centerX" id="tqj-dB-XYy"/>
+                            <constraint firstItem="VvY-93-ku4" firstAttribute="top" secondItem="9ZQ-oU-Jhd" secondAttribute="bottom" id="ydc-ew-Z6R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtPostnummer" destination="AS7-Qz-mPP" id="O1d-eC-iZv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdZ-ho-92y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.59999999999999" y="92.203898050974516"/>
+        </scene>
+        <!--Table View Controller Allergy Ticker-->
         <scene sceneID="7Wj-gq-tbF">
             <objects>
-                <tableViewController id="fyE-Sh-6z7" customClass="ViewController" customModule="SpiroAppNew" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="allergyVC" id="fyE-Sh-6z7" customClass="TableViewControllerAllergyTicker" customModule="SpiroAppNew" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CE8-Lr-9s6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,7 +134,10 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLx-vk-7dt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="911" y="116"/>
+            <point key="canvasLocation" x="868" y="92"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background_Spiro" width="1997" height="3000"/>
+    </resources>
 </document>

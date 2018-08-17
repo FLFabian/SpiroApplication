@@ -15,6 +15,10 @@
 		73BADE2420B83D2300E4CC19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BADE2220B83D2300E4CC19 /* LaunchScreen.storyboard */; };
 		73BADE2F20B83D2400E4CC19 /* SpiroAppNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BADE2E20B83D2400E4CC19 /* SpiroAppNewTests.swift */; };
 		73BADE3A20B83D2400E4CC19 /* SpiroAppNewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BADE3920B83D2400E4CC19 /* SpiroAppNewUITests.swift */; };
+		B9AB66752123322300F83EB5 /* Amatic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9AB6673212331D100F83EB5 /* Amatic-Bold.ttf */; };
+		B9E0A1E72123437600161CCA /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E0A1E62123437600161CCA /* ButtonStyles.swift */; };
+		B9F805822125E52E00B5F910 /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9F805812125E52E00B5F910 /* iTunesArtwork@1x.png */; };
+		B9F805852127754500B5F910 /* TableViewControllerAllergyTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F805842127754500B5F910 /* TableViewControllerAllergyTicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		73BADE3520B83D2400E4CC19 /* SpiroAppNewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpiroAppNewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BADE3920B83D2400E4CC19 /* SpiroAppNewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiroAppNewUITests.swift; sourceTree = "<group>"; };
 		73BADE3B20B83D2400E4CC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9AB6673212331D100F83EB5 /* Amatic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Amatic-Bold.ttf"; path = "../Amatic-Bold.ttf"; sourceTree = "<group>"; };
+		B9E0A1E62123437600161CCA /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		B9F805812125E52E00B5F910 /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
+		B9F805842127754500B5F910 /* TableViewControllerAllergyTicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerAllergyTicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,7 @@
 				73BADE2D20B83D2400E4CC19 /* SpiroAppNewTests */,
 				73BADE3820B83D2400E4CC19 /* SpiroAppNewUITests */,
 				73BADE1420B83D2200E4CC19 /* Products */,
+				B9AB6672212331B900F83EB5 /* Fonts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +110,14 @@
 			children = (
 				73BADE1620B83D2300E4CC19 /* AppDelegate.swift */,
 				73BADE1820B83D2300E4CC19 /* ViewController.swift */,
+				B9F805842127754500B5F910 /* TableViewControllerAllergyTicker.swift */,
 				73BADE1A20B83D2300E4CC19 /* Main.storyboard */,
 				73BADE2020B83D2300E4CC19 /* Assets.xcassets */,
 				73BADE2220B83D2300E4CC19 /* LaunchScreen.storyboard */,
+				B9F805832125E53F00B5F910 /* Images */,
 				73BADE2520B83D2300E4CC19 /* Info.plist */,
 				73BADE1D20B83D2300E4CC19 /* SpiroAppNew.xcdatamodeld */,
+				B9E0A1E62123437600161CCA /* ButtonStyles.swift */,
 			);
 			path = SpiroAppNew;
 			sourceTree = "<group>";
@@ -126,6 +138,22 @@
 				73BADE3B20B83D2400E4CC19 /* Info.plist */,
 			);
 			path = SpiroAppNewUITests;
+			sourceTree = "<group>";
+		};
+		B9AB6672212331B900F83EB5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B9AB6673212331D100F83EB5 /* Amatic-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B9F805832125E53F00B5F910 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B9F805812125E52E00B5F910 /* iTunesArtwork@1x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +219,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Papuchinos;
 				TargetAttributes = {
 					73BADE1220B83D2200E4CC19 = {
@@ -235,6 +263,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9AB66752123322300F83EB5 /* Amatic-Bold.ttf in Resources */,
+				B9F805822125E52E00B5F910 /* iTunesArtwork@1x.png in Resources */,
 				73BADE2420B83D2300E4CC19 /* LaunchScreen.storyboard in Resources */,
 				73BADE2120B83D2300E4CC19 /* Assets.xcassets in Resources */,
 				73BADE1C20B83D2300E4CC19 /* Main.storyboard in Resources */,
@@ -263,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BADE1920B83D2300E4CC19 /* ViewController.swift in Sources */,
+				B9F805852127754500B5F910 /* TableViewControllerAllergyTicker.swift in Sources */,
+				B9E0A1E72123437600161CCA /* ButtonStyles.swift in Sources */,
 				73BADE1720B83D2300E4CC19 /* AppDelegate.swift in Sources */,
 				73BADE1F20B83D2300E4CC19 /* SpiroAppNew.xcdatamodeld in Sources */,
 			);
@@ -333,6 +365,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -340,6 +373,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -390,6 +424,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -397,6 +432,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
