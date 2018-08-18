@@ -18,7 +18,7 @@
         <!--View Controller-->
         <scene sceneID="YmV-GY-7O0">
             <objects>
-                <viewController id="GVY-32-e6T" customClass="ViewController" customModule="SpiroAppNew" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="firstVC" id="GVY-32-e6T" customClass="ViewController" customModule="SpiroAppNew" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qZK-SO-kw3"/>
                         <viewControllerLayoutGuide type="bottom" id="VvY-93-ku4"/>
@@ -73,7 +73,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fyE-Sh-6z7" kind="show" id="WC3-hW-faN"/>
+                                    <segue destination="fyE-Sh-6z7" kind="presentation" identifier="goUp" id="WC3-hW-faN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -100,6 +100,7 @@
                             <constraint firstItem="VvY-93-ku4" firstAttribute="top" secondItem="9ZQ-oU-Jhd" secondAttribute="bottom" id="ydc-ew-Z6R"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="eg7-DY-JR0"/>
                     <connections>
                         <outlet property="txtPostnummer" destination="AS7-Qz-mPP" id="O1d-eC-iZv"/>
                     </connections>
@@ -131,10 +132,13 @@
                             <outlet property="delegate" destination="fyE-Sh-6z7" id="P7h-af-KKL"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="GVY-32-e6T" kind="presentation" identifier="goDown" modalPresentationStyle="overFullScreen" id="u14-mj-3pu"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLx-vk-7dt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="868" y="92"/>
+            <point key="canvasLocation" x="900" y="92"/>
         </scene>
     </scenes>
     <resources>

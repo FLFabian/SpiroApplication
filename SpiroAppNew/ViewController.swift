@@ -14,6 +14,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBAction func txtPostnummerLength(_ sender: UITextField) {
         maxLength(textFieldName: txtPostnummer, max4: 4)
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
         //Only allow numberpad
         txtPostnummer.keyboardType = UIKeyboardType.numberPad
     }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -58,6 +61,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             textFieldName.text = textFieldName.text?.substring(to: index!)
         }
     }
+    
     // END txtPostnummer input field validation
     
     // Class for styling buttons

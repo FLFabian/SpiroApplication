@@ -12,19 +12,24 @@ class TableViewControllerAllergyTicker: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
+        swipeDown.direction = .down
+        self.view.addGestureRecognizer(swipeDown)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @objc func swipeAction(swipe:UISwipeGestureRecognizer)
+    {
+     if(swipe.direction == .down)
+     {
+        performSegue(withIdentifier: "goDown", sender: self)
+        }
+    }
 
         
         let allergies = ["Æg", "Mælk", "Fisk", "Gluten", "Soja", "Nødder", "Peanuts", "Kød"]
@@ -56,4 +61,6 @@ class TableViewControllerAllergyTicker: UITableViewController {
                 
             }
         }
+    
+    
 }//end of TBC class
