@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11AE6CF22128843500F43E65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE6CF02128843500F43E65 /* ViewController.swift */; };
+		11AE6CF32128843500F43E65 /* TableViewControllerAllergyTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE6CF12128843500F43E65 /* TableViewControllerAllergyTicker.swift */; };
+		11AE6CF62128844900F43E65 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE6CF52128844900F43E65 /* ButtonStyles.swift */; };
+		11AE6CF9212886DC00F43E65 /* Amatic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11AE6CF8212886DC00F43E65 /* Amatic-Bold.ttf */; };
 		73BADE1720B83D2300E4CC19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BADE1620B83D2300E4CC19 /* AppDelegate.swift */; };
-		73BADE1920B83D2300E4CC19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BADE1820B83D2300E4CC19 /* ViewController.swift */; };
 		73BADE1C20B83D2300E4CC19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BADE1A20B83D2300E4CC19 /* Main.storyboard */; };
 		73BADE1F20B83D2300E4CC19 /* SpiroAppNew.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73BADE1D20B83D2300E4CC19 /* SpiroAppNew.xcdatamodeld */; };
 		73BADE2120B83D2300E4CC19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73BADE2020B83D2300E4CC19 /* Assets.xcassets */; };
 		73BADE2420B83D2300E4CC19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BADE2220B83D2300E4CC19 /* LaunchScreen.storyboard */; };
 		73BADE2F20B83D2400E4CC19 /* SpiroAppNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BADE2E20B83D2400E4CC19 /* SpiroAppNewTests.swift */; };
 		73BADE3A20B83D2400E4CC19 /* SpiroAppNewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BADE3920B83D2400E4CC19 /* SpiroAppNewUITests.swift */; };
-		B9AB66752123322300F83EB5 /* Amatic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9AB6673212331D100F83EB5 /* Amatic-Bold.ttf */; };
-		B9E0A1E72123437600161CCA /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E0A1E62123437600161CCA /* ButtonStyles.swift */; };
 		B9F805822125E52E00B5F910 /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9F805812125E52E00B5F910 /* iTunesArtwork@1x.png */; };
-		B9F805852127754500B5F910 /* TableViewControllerAllergyTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F805842127754500B5F910 /* TableViewControllerAllergyTicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11AE6CF02128843500F43E65 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11AE6CF12128843500F43E65 /* TableViewControllerAllergyTicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerAllergyTicker.swift; sourceTree = "<group>"; };
+		11AE6CF52128844900F43E65 /* ButtonStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		11AE6CF8212886DC00F43E65 /* Amatic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amatic-Bold.ttf"; sourceTree = "<group>"; };
 		73BADE1320B83D2200E4CC19 /* SpiroAppNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpiroAppNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BADE1620B83D2300E4CC19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73BADE1820B83D2300E4CC19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73BADE1B20B83D2300E4CC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73BADE1E20B83D2300E4CC19 /* SpiroAppNew.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpiroAppNew.xcdatamodel; sourceTree = "<group>"; };
 		73BADE2020B83D2300E4CC19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,10 +56,7 @@
 		73BADE3520B83D2400E4CC19 /* SpiroAppNewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpiroAppNewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BADE3920B83D2400E4CC19 /* SpiroAppNewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiroAppNewUITests.swift; sourceTree = "<group>"; };
 		73BADE3B20B83D2400E4CC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9AB6673212331D100F83EB5 /* Amatic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Amatic-Bold.ttf"; path = "../Amatic-Bold.ttf"; sourceTree = "<group>"; };
-		B9E0A1E62123437600161CCA /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		B9F805812125E52E00B5F910 /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
-		B9F805842127754500B5F910 /* TableViewControllerAllergyTicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerAllergyTicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11AE6CEF2128843500F43E65 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				11AE6CF02128843500F43E65 /* ViewController.swift */,
+				11AE6CF12128843500F43E65 /* TableViewControllerAllergyTicker.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		11AE6CF42128844900F43E65 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				11AE6CF52128844900F43E65 /* ButtonStyles.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		11AE6CF7212886DC00F43E65 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				11AE6CF8212886DC00F43E65 /* Amatic-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		11AE6CFA2128873000F43E65 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				73BADE1A20B83D2300E4CC19 /* Main.storyboard */,
+				73BADE2220B83D2300E4CC19 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		11AE6CFD212887DD00F43E65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73BADE2020B83D2300E4CC19 /* Assets.xcassets */,
+				11AE6CF7212886DC00F43E65 /* Fonts */,
+				B9F805832125E53F00B5F910 /* Images */,
+				73BADE2520B83D2300E4CC19 /* Info.plist */,
+				73BADE1D20B83D2300E4CC19 /* SpiroAppNew.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		73BADE0A20B83D2200E4CC19 = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +137,6 @@
 				73BADE2D20B83D2400E4CC19 /* SpiroAppNewTests */,
 				73BADE3820B83D2400E4CC19 /* SpiroAppNewUITests */,
 				73BADE1420B83D2200E4CC19 /* Products */,
-				B9AB6672212331B900F83EB5 /* Fonts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,16 +153,11 @@
 		73BADE1520B83D2200E4CC19 /* SpiroAppNew */ = {
 			isa = PBXGroup;
 			children = (
+				11AE6CFA2128873000F43E65 /* Storyboards */,
+				11AE6CF42128844900F43E65 /* Components */,
+				11AE6CEF2128843500F43E65 /* ViewControllers */,
 				73BADE1620B83D2300E4CC19 /* AppDelegate.swift */,
-				73BADE1820B83D2300E4CC19 /* ViewController.swift */,
-				B9F805842127754500B5F910 /* TableViewControllerAllergyTicker.swift */,
-				73BADE1A20B83D2300E4CC19 /* Main.storyboard */,
-				73BADE2020B83D2300E4CC19 /* Assets.xcassets */,
-				73BADE2220B83D2300E4CC19 /* LaunchScreen.storyboard */,
-				B9F805832125E53F00B5F910 /* Images */,
-				73BADE2520B83D2300E4CC19 /* Info.plist */,
-				73BADE1D20B83D2300E4CC19 /* SpiroAppNew.xcdatamodeld */,
-				B9E0A1E62123437600161CCA /* ButtonStyles.swift */,
+				11AE6CFD212887DD00F43E65 /* Supporting Files */,
 			);
 			path = SpiroAppNew;
 			sourceTree = "<group>";
@@ -138,14 +178,6 @@
 				73BADE3B20B83D2400E4CC19 /* Info.plist */,
 			);
 			path = SpiroAppNewUITests;
-			sourceTree = "<group>";
-		};
-		B9AB6672212331B900F83EB5 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				B9AB6673212331D100F83EB5 /* Amatic-Bold.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		B9F805832125E53F00B5F910 /* Images */ = {
@@ -263,9 +295,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9AB66752123322300F83EB5 /* Amatic-Bold.ttf in Resources */,
 				B9F805822125E52E00B5F910 /* iTunesArtwork@1x.png in Resources */,
 				73BADE2420B83D2300E4CC19 /* LaunchScreen.storyboard in Resources */,
+				11AE6CF9212886DC00F43E65 /* Amatic-Bold.ttf in Resources */,
 				73BADE2120B83D2300E4CC19 /* Assets.xcassets in Resources */,
 				73BADE1C20B83D2300E4CC19 /* Main.storyboard in Resources */,
 			);
@@ -292,9 +324,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73BADE1920B83D2300E4CC19 /* ViewController.swift in Sources */,
-				B9F805852127754500B5F910 /* TableViewControllerAllergyTicker.swift in Sources */,
-				B9E0A1E72123437600161CCA /* ButtonStyles.swift in Sources */,
+				11AE6CF22128843500F43E65 /* ViewController.swift in Sources */,
+				11AE6CF62128844900F43E65 /* ButtonStyles.swift in Sources */,
+				11AE6CF32128843500F43E65 /* TableViewControllerAllergyTicker.swift in Sources */,
 				73BADE1720B83D2300E4CC19 /* AppDelegate.swift in Sources */,
 				73BADE1F20B83D2300E4CC19 /* SpiroAppNew.xcdatamodeld in Sources */,
 			);

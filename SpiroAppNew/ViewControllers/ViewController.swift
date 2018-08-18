@@ -10,26 +10,26 @@ import UIKit
 
 class ViewController: UIViewController,UITextFieldDelegate {
     
+    // MARK: Vars
+    
+    // UI
     @IBOutlet weak var txtPostnummer: UITextField!
-    @IBAction func txtPostnummerLength(_ sender: UITextField) {
-        maxLength(textFieldName: txtPostnummer, max4: 4)
-    }
 
+    // MARK: View lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.txtPostnummer.delegate = self;
         //Only allow numberpad
-        txtPostnummer.keyboardType = UIKeyboardType.numberPad
+        self.txtPostnummer.keyboardType = UIKeyboardType.numberPad
     }
     
+    // MARK: Actions
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func txtPostnummerLength(_ sender: UITextField) {
+        self.maxLength(textFieldName: txtPostnummer, max4: 4)
     }
-    
     
    // START txtPostnummer input field validation
     
@@ -41,39 +41,33 @@ class ViewController: UIViewController,UITextFieldDelegate {
         return allowedCharacters.isSuperset(of: characterSet)
     }*/
     
+    // MARK: UITouch
+    
     // Hide keyboard when user touches outside
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
+    // MARK: UITextField Delegate
+    
     // Hide also numpad when user presses return key
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        txtPostnummer.resignFirstResponder()
+        self.txtPostnummer.resignFirstResponder()
         return (true)
     }
     
-    func maxLength (textFieldName: UITextField, max4:Int){
-    let length = textFieldName.text?.count
-    let metin = textFieldName.text
+    // MARK: Methods
+    
+    func maxLength(textFieldName: UITextField, max4:Int) {
+        let length = textFieldName.text?.count
+        let metin = textFieldName.text
         
-        if (length! > max4)
-        {
+        if ((length! > max4) && (metin != nil)) {
             let index = metin?.index((metin?.startIndex)!, offsetBy: max4)
-            textFieldName.text = textFieldName.text?.substring(to: index!)
+            textFieldName.text = String(metin![..<index!])
         }
     }
     
     // END txtPostnummer input field validation
-    
-    // Class for styling buttons
-    class RoundedButton: UIButton {
-        
-        override func awakeFromNib() {
-            super.awakeFromNib()
-            
-            layer.borderWidth = 1/UIScreen.main.nativeScale
-            layer.borderColor = UIColor.orange.cgColor
-            layer.cornerRadius = frame.height/4
-            contentEdgeInsets = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
-        }
-    }
+
 }
