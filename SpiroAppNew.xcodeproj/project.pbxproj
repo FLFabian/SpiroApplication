@@ -11,6 +11,7 @@
 		11AE6CF32128843500F43E65 /* TableViewControllerAllergyTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE6CF12128843500F43E65 /* TableViewControllerAllergyTicker.swift */; };
 		11AE6CF62128844900F43E65 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE6CF52128844900F43E65 /* ButtonStyles.swift */; };
 		11AE6CF9212886DC00F43E65 /* Amatic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11AE6CF8212886DC00F43E65 /* Amatic-Bold.ttf */; };
+		11D0821A21293F0500DECF7D /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D0821921293F0500DECF7D /* LocalStorage.swift */; };
 		73BADE1720B83D2300E4CC19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BADE1620B83D2300E4CC19 /* AppDelegate.swift */; };
 		73BADE1C20B83D2300E4CC19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BADE1A20B83D2300E4CC19 /* Main.storyboard */; };
 		73BADE1F20B83D2300E4CC19 /* SpiroAppNew.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73BADE1D20B83D2300E4CC19 /* SpiroAppNew.xcdatamodeld */; };
@@ -43,6 +44,7 @@
 		11AE6CF12128843500F43E65 /* TableViewControllerAllergyTicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerAllergyTicker.swift; sourceTree = "<group>"; };
 		11AE6CF52128844900F43E65 /* ButtonStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		11AE6CF8212886DC00F43E65 /* Amatic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amatic-Bold.ttf"; sourceTree = "<group>"; };
+		11D0821921293F0500DECF7D /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 		73BADE1320B83D2200E4CC19 /* SpiroAppNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpiroAppNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BADE1620B83D2300E4CC19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73BADE1B20B83D2300E4CC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -130,6 +132,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		11D0821821293E4700DECF7D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				11D0821921293F0500DECF7D /* LocalStorage.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		73BADE0A20B83D2200E4CC19 = {
 			isa = PBXGroup;
 			children = (
@@ -153,8 +163,9 @@
 		73BADE1520B83D2200E4CC19 /* SpiroAppNew */ = {
 			isa = PBXGroup;
 			children = (
-				11AE6CFA2128873000F43E65 /* Storyboards */,
 				11AE6CF42128844900F43E65 /* Components */,
+				11AE6CFA2128873000F43E65 /* Storyboards */,
+				11D0821821293E4700DECF7D /* Services */,
 				11AE6CEF2128843500F43E65 /* ViewControllers */,
 				73BADE1620B83D2300E4CC19 /* AppDelegate.swift */,
 				11AE6CFD212887DD00F43E65 /* Supporting Files */,
@@ -327,6 +338,7 @@
 				11AE6CF22128843500F43E65 /* ViewController.swift in Sources */,
 				11AE6CF62128844900F43E65 /* ButtonStyles.swift in Sources */,
 				11AE6CF32128843500F43E65 /* TableViewControllerAllergyTicker.swift in Sources */,
+				11D0821A21293F0500DECF7D /* LocalStorage.swift in Sources */,
 				73BADE1720B83D2300E4CC19 /* AppDelegate.swift in Sources */,
 				73BADE1F20B83D2300E4CC19 /* SpiroAppNew.xcdatamodeld in Sources */,
 			);
