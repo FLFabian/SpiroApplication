@@ -60,11 +60,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     func maxLength(textFieldName: UITextField, max4:Int) {
         let length = textFieldName.text?.count
-        let metin = textFieldName.text
+        let text = textFieldName.text
         
-        if ((length! > max4) && (metin != nil)) {
-            let index = metin?.index((metin?.startIndex)!, offsetBy: max4)
-            textFieldName.text = String(metin![..<index!])
+        if ((length! > max4) && (text != nil)) {
+            let index = text?.index((text?.startIndex)!, offsetBy: max4)
+            textFieldName.text = String(text![..<index!])
         }
     }
     
